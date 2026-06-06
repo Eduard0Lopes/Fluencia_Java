@@ -1,0 +1,19 @@
+package Loops_For_e_While.Exercicios.Exercicio3;
+
+public class Principal {
+
+    // Maria quer calcular a soma de todos os números pares de 1 a 100.
+    // Ela decidiu usar um loop para iterar pelos números e somar apenas aqueles divisíveis por 2.
+    // Crie um programa que realize essa tarefa.
+
+    static void main(String[] args) {
+        int soma = 0;
+
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 == 0){
+                soma += i;
+            }
+        }
+        System.out.println("A soma dos numeros pares de 1 a 100 é: " + soma);
+    }
+}

@@ -1,0 +1,30 @@
+package Condicionais_If_Else.Exercicios.Exercicio3;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    // Jéssica trabalha no setor de TI de uma empresa e precisa garantir a segurança dos acessos ao sistema interno.
+    // Os funcionários utilizam uma senha fixa para acessar suas contas,
+    // e o sistema deve verificar se a senha inserida está correta.
+    //
+    // Ajude Jéssica a criar um programa que, com base em uma senha pré-definida, por exemplo: 123456,
+    // verifique se o que o usuário digitou está correto ou não. O programa deve comparar a tentativa com a
+    // senha correta e exibir se o acesso foi permitido ou negado.
+
+    static void main() {
+        Scanner input = new Scanner(System.in);
+
+        String senha = "123456";
+        System.out.println("Digite a senha de acesso: ");
+        String tentativaSenha = input.nextLine();
+
+        input.close();
+
+        if (tentativaSenha.equals(senha)) {
+            System.out.println("Acesso liberado!");
+        } else {
+            System.out.println("Senha incorreta");
+        }
+    }
+}
