@@ -11,7 +11,6 @@ public class Aluno {
         this.nota2 = nota2;
     }
 
-
     public void mostraAluno() {
     double media = (nota1 + nota2) / 2;
         System.out.printf("Aluno: %s - Média: %.1f", nome, media);
